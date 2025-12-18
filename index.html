@@ -4,84 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>User Registration</h1>
-    <p>Please fill in the form to create an account</p>
-    <form>
-      <table>
-        <tr>
-          <td>Full Name:</td>
-          <td>
-            <input
-              type="text"
-              name="fullname"
-              placeholder="Enter Your Full Name"
-              required
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>Email Address:</td>
-          <td>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter Your Email"
-              required
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>Password:</td>
-          <td>
-            <input
-              type="password"
-              name="password"
-              placeholder="Enter Password"
-              required
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>Gender:</td>
-          <td>
-            <input type="radio" name="gender" /> Male
-            <input type="radio" name="gender" id="" /> Female
-          </td>
-        </tr>
-        <tr>
-          <td>Date of Birth:</td>
-          <td>
-            <input type="date" name="dob" id="" />
-          </td>
-        </tr>
-        <tr>
-          <td>Country:</td>
-          <td>
-            <select name="Country">
-              <option>Select Country</option>
-              <option>Pakistan</option>
-              <option>India</option>
-              <option>USA</option>
-              <option>UK</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td>Skill:</td>
-          <td>
-            <input type="checkbox" />HTML <input type="checkbox" />CSS
-            <input type="checkbox" />JavaScript
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="submit" value="Register" />
-            <input type="reset" value="Clear" />
-          </td>
-        </tr>
-      </table>
-    </form>
+    <div class="container">
+      <h1>User Registration</h1>
+      <p>Please fill in the form to create an account</p>
+      <form action="./success.html" method="post">
+        <table>
+          <tr>
+            <td>Full Name:</td>
+            <td>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Enter Your Full Name"
+                required
+                style="width: 300px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email Address:</td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+                style="width: 300px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+                required
+                style="width: 150px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" name="gender" /> Male
+              <input type="radio" name="gender" id="" /> Female
+            </td>
+          </tr>
+          <tr>
+            <td>Date of Birth:</td>
+            <td>
+              <input type="date" name="dob" style="width: 120px" />
+            </td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>
+              <select name="Country" style="width: 150px">
+                <option>Select Country</option>
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Skill:</td>
+            <td>
+              <input type="checkbox" />HTML <input type="checkbox" />CSS
+              <input type="checkbox" />JavaScript
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Register" /> 
+              <input type="reset" value="Clear" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
   </body>
 </html>
